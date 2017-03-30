@@ -12,6 +12,7 @@ class Primitives {
 		int decimal1 = 123;
     //int decimal2 = _123;         // does not compile: no underscore at the start of a literal
     // int decimal3 = 123_;        // does not compile: no underscore at the end
+    int decimal4 = 1___234;        // multiple underscores is okay
 
     int binary1 = 0b010101;
     // int binary2 = 0b_010101;    // does not compile: no underscore directly after 0b
@@ -27,14 +28,16 @@ class Primitives {
     //int hex2 = 0x_000_00abc;     // does not compile: no underscore directly after 0x
     
     double double1 = 1_000.23_500; //
-    //double double2 = 100_.23_5;  // does not compile: no underscore before decimal point
-
+    //double double2 = 100_.23_5;  // does not compile: no underscore directly before decimal point
+    //double double3 = 100._23_5;  // does not compile: no underscore directly after decimal point
+    
     
     /*
       Assigning literals using suffixes:
     */
 
 
+    
     
 	}
 
